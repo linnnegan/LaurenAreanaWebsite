@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>About</title>
+		<link rel="stylesheet" type="text/css" href="about.css"/>
+	  </head>
+	  
+	  <body>
+		<div class="header">
+		  <a href="#default" class="logo">LA</a>
+		  <div class="header-right">
+			<a class="active" href="home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="donate&contact.html">Donate&Contact</a>
+		  </div>
+		</div>
+
+<h1>About</h1>
+
+<img src = "https://pbs.twimg.com/profile_banners/3449341888/1571261019/1500x500" 
+width= 100% height= auto%>
+
+
+<h2>Lauren's Story</h2>	
+
+<p>Lauren was like any other child, going to the park, participating in sports, 
+going to school and any other activities a 9 year old could think of. It all 
+changed when she turned 10. She woke up in the hospital, with severe seizures, 
+myoclonus, and the inability to walk. It took several months to finally be 
+diagnosed with M.E.A.K., also known as, Myoclonic Epilepsy and Ataxia due to 
+Potassium (K+). Lauren had a potassium related genetic disorder that usually 
+expresses between the ages 3 to 15, and was among the 20 known cases in the world. 
+As she aged she began to lose contact with the world, she lost many friends and went 
+through periods of depression. Finally at age 24, she plucked up the courage to join 
+a dance school. At first, even hand to hand contact would trigger myoclonic attacks, but 
+despite the odds, Lauren flourished. She excelled quickly, and is a certified para dance 
+athlete. She is an excellent artist, loves to give back to her community, and is 
+a great artist. </p>
+
+<div class="slideshow-container">
+
+	<div class="Slides fade">
+	  <div class="numbertext">1 / 3</div> 
+	  <img src="https://d1ung6i9j8i9xc.cloudfront.net/wp-content/blogs.dir/123/files/2018/10/181004Mishkin.jpg" style="width:100%">
+	  <div class="caption">Dance Practice</div>
+	</div>
+  
+	<div class="Slides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="https://s7d2.scene7.com/is/image/TWCNews/nyer_lauren_arenapkgfix3446331091934222405png" style="width:100%">
+	  <div class="caption">Interview Time</div>
+	</div>
+  
+	<div class="Slides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="https://dancewithmeusa.com/wp-content/uploads/2017/10/Wheelchair-dancing.jpg" style="width:100%">
+	  <div class="caption">Dance With Me USA Contest</div>
+	</div>
+  
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
+	<a class="next" onclick="plusSlides(1)">&#10095;</a> 
+  </div>
+  <br>
+  
+  <div style= "caption-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+	</body>
+</html>
+<script>
+		let slideIndex = 1;
+	showSlides(slideIndex); 
+
+	
+	function plusSlides(n) {
+	showSlides(slideIndex += n);
+	} 
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+	function showSlides(n) {
+	let i;
+	let slides = document.getElementsByClassName("Slides");
+	let dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1} 
+	if (n < 1) {slideIndex = slides.length} 
+	for (i = 0; i < slides.length; i++) { 
+		slides[i].style.display = "none"; 
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", ""); 
+	}
+	slides[slideIndex-1].style.display = "block"; 
+	dots[slideIndex-1].className += " active";
+	}
+</script>
+<html>
+	<body>
+
+		<h2> About M.E.A.K </h2>
+
+		<p> Myoclonus epilepsy and ataxia due to potassium channel mutation, also known M.E.A.K, is a genetic, 
+		neurological disorder that only has 20 documented cases. This disorder can cause 
+		individuals to suffer from seizures, slowed speech, and painful involuntary contraction of 
+		the muscles. Unfortunately, due the rareness of this disorder, there is not much research on it. 
+		If you would like to learn more about it, please click on the links below.</p>
+
+<div class="links">
+	<ul> 
+		<li> <a style = "text-decoration:none;" href="https://www.chop.edu/conditions-diseases/kcnc1-related-disorders"> Children’s Hospital of Philadelphia research </a> </li>
+		<li> <a style = "text-decoration:none;" href="https://onlinelibrary.wiley.com/doi/abs/10.1684/epd.2020.1197"> Wiley Online Library research </a> </li>
+		<li> <a style = "text-decoration:none;" href="https://www.orpha.net/consor/cgi-bin/Disease_Search.php?lng=EN&data_id=23295&Disease_Disease_Search_diseaseGroup=epilepsy&Disease_Disease_Search_diseaseType=Pat&Disease(s)/group%20of%20diseases=Progressive-myoclonic-epilepsy-type-7--Progressive-myoclonic-epilepsy-due-to-KV3-1-deficiency-&title=Progressive-myoclonic-epilepsy-type-7--Progressive-myoclonic-epilepsy-due-to-KV3-1-deficiency-&search=Disease_Search_Simple"> Orphanet research </a> </li>
+		<li> <a style = "text-decoration:none;" href="https://www.epilepsy.com/connect/forums/parents-caregivers/meak-myoclonic-epilepsy-associated-kcnc-1-gene-mutation-0"> Epilepsy Foundation research </a> </li>
+	</ul>
+</div>
+
+<div class= "social">
+	<a style = "text-decoration:none;" href="https://www.facebook.com/Mswheelchairny2020" target=_blank> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="facebook logo" width=5% height=5%>
+		</a>
+	<a style = "text-decoration:none;" href="https://twitter.com/dancingonwheelz?lang=en" target=_blank> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-512.png" alt="twitter logo" width=5% height=5%>
+		</a>
+	<a style = "text-decoration:none;" href="https://www.instagram.com/mswheelchairny2020" target=_blank> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="instagram logo" width=5% height=5%>
+		</a>
+</div> 
+	<script>
+		window.watsonAssistantChatOptions = {
+			integrationID: "00366ad6-3ead-4cbf-829e-3687f5cb9e78", 
+			region: "us-south", 
+			serviceInstanceID: "0ef7855c-d4c8-435f-84cc-cb8a813198d4", 
+			onLoad: function(instance) { instance.render(); }
+		};
+		setTimeout(function(){
+		const t=document.createElement('script');
+		t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		document.head.appendChild(t);
+		});
+	</script>
+	</body>
+</html>
